@@ -1,0 +1,19 @@
+<footer id="footer">
+  <ul class="copyright">
+    <li>Ce site est en construction.</li>
+  </ul>
+  <ul class="copyright">
+    <li>&copy;
+      {{ with .Site.Params.footer.copyright }}
+        {{ . }}
+      {{ else }}
+        {{ .Site.Params.author }}
+      {{ end }}</li>
+    <li>SIRET : {{ .Site.Params.license.siret }}</li>
+    <li><a href="{{ relref . "page/mentions.md" }}">Mentions légales</a></li>
+    <li>
+      {{ with .Site.Params.license }}
+        <a href="{{ .link }}">{{ .name }}</a>
+      {{ end }}</li>
+
+</footer>

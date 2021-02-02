@@ -1,0 +1,75 @@
+@font-face {
+  font-family: TimeBurner;
+  src: url(../fonts/timeburnernormal.ttf);
+}
+@font-face {
+  font-family: Montez;
+  src: url(../fonts/Montez-Regular.ttf);
+}
+
+
+h1 {
+  font-family: Montez, Verdana, sans-serif;
+  text-transform: none;
+  text-align: center;
+  letter-spacing: 0.1em;
+  margin: 0;
+  font-size: 3.5em;}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 2.5em; }
+  }
+
+h1 .position {
+  font-size: 0.85em;
+  letter-spacing: 0.07em;
+  color: rgba(245, 70, 4, 1);
+  margin: 0 0 0.525em 0;
+  line-height: 2;}
+
+
+body, input, select, textarea {
+color: #111;
+font-family: TimeBurner, Arial, sans-serif; }
+
+#main .location {
+  margin-top: 0;
+}
+
+span.biography {
+  font-family: Montez, Verdana, sans-serif;
+  font-style: italic;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.25em; }
+
+h4 {
+  font-size: 1em; }
+
+h5, li {
+  font-size: 1.3em; }
+
+.skill-scope li, .phone-number {
+  font-weight: bold;
+}
+
+h6, .biography {
+  font-size: 1.8em;
+}
+
+.contact-description {
+  list-style: disc;
+  float: left;
+  text-align: left;
+  font-weight: 400;
+}
+
+#content {
+  text-align: justify;
+}

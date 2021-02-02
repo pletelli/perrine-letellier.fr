@@ -1,0 +1,156 @@
+# TODO: add description
+# h1 et metadescription
+# gtmetrics
+
+
+# Site settings
+baseurl = "https://perrine-letellier.fr" #without ending slash
+languageCode = "fr-fr"
+title = "Perrine Letellier - naturopathie & hypnose à Janzé"
+theme = "hugo-identity-theme"
+
+# Disable unnecessary kinds
+disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "robotsTXT", "404"]
+
+[sitemap]
+  changefreq = "monthly"
+
+# Enter your tracking code to enable Google Analytics
+#googleAnalytics = "UA-XXXXX-Y"
+
+[params]
+
+  name = "Perrine Letellier"
+  description = "Naturopathe certifiée FENA, hypnothérapeute certifiée à l'ARCHE, je vous reçois à Janzé, proche de Rennes. J'organise aussi des ateliers de phytothérapie, nutrition, self-help ..."
+
+  # Images settings
+  # Icons, backgrounds and avatars folders are placed in theme's static/images folder.
+  # You may place your images in corresponding folders and then set only filenames below to
+  # change page's appearance
+
+  # Site icons
+  favicon_ico = "favicon.ico"
+  favicon_ico_sizes = "16x16 32x32"
+  appleicon = "apple_favicon.png"
+
+  # Additional options to supplement icons served
+  #favicon_png = "favicon.png"
+  #favicon_png_sizes = "96x96"
+  #favicon_svg = "favicon.svg"
+
+  # Link custom assets relative to /static
+  #custom_js  = [""]
+  custom_css = ["css/background.css", "css/fonts.css", "css/avatar.css"]
+
+  # Customization switchesNatur
+  # Overwrite FontAwesome: see icons.css
+  #custom_icons = true
+  # Overwrite background: see background.css
+  custom_background = true
+
+  # Personal data
+  [params.personal]
+    # If name is not set, author is used
+    name = "Perrine Letellier"
+    # Avatars can be written to images/avatars/
+    avatarFront = "logo_final.svg"
+    avatarBack = "perrine3.jpg"
+    position = "Thérapeute holistique"
+    worksIn = "La Canopée"
+    workingPlace = "[2 rue Louis Amoureux, Janzé, Ille-et-Vilaine](https://www.openstreetmap.org/node/7867696215#map=19/47.95796/-1.49821)"
+    scope = [
+        "Naturopathie",
+        "Hypnose ericksonnienne",
+        "Réflexologie plantaire"
+      ]
+    bigScope = [
+        ["Naturopathie", "Hypnose ericksonnienne", "Réflexologie plantaire"],
+        ["1h-1h30", "1h-1h30", "1h"],
+        ["60€", "60€", "50€"],
+        ["(50€ en visio)", "(50€ en visio)", ""]
+      ]
+    biography = """Retrouver l'autonomie vers la santé"""
+
+  # Contact form settings
+
+  [params.contact]
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+
+    phoneNumber = "07 66 58 18 51"
+    email = "contact@perrine-letellier.fr"
+
+    # It is possible to substitute formspring with other providers
+    # as an example the mailout plugin from caddy.
+    # Provide the post URL for the form and depending on the provider
+    # add some custom JS script to finish the implementation.
+
+    postURL = "https://formspree.io/f/xzbkkvvg"
+
+    enable = true
+    title = "Prendre RDV"
+    namePlaceholder = "Nom"
+    emailPlaceholder = "Email"
+    messagePlaceholder = "Message"
+    buttonText = "Envoyer"
+    success = "Merci de votre message. Je reviens vers vous très vite !"
+    error = "Le message n'a pas pu être envoyé. Contactez-moi par téléphone."
+
+    # Google invisible captcha
+    #[params.contact.captcha]
+    #  sitekey = ""
+
+
+    # Add optional form fields to identify contact forms.
+    #[[params.contact.fields.hidden]]
+    #  name = "someID"
+    #  value = "example.com"
+
+    #[[params.contact.fields.hidden]]
+    # Special values for name such as "page" and "site" will be autofilled
+    #  name = "page"
+
+  # Social settings
+  # You may change these with your social links or add others
+
+  [[params.social]]
+    title = "Instagram"
+    icon = "fa-instagram"
+    link = "https://www.instagram.com/perrineltl/"
+    target = "_blank"
+
+  [[params.social]]
+    title = "Facebook"
+    icon = "fa-facebook"
+    link = "https://www.facebook.com/perrineltl"
+    target = "_blank"
+
+  # Footer settings
+  [params.footer]
+    # If copyright is not set, author is used
+    copyright = "Perrine Letellier"
+
+  # Page license
+  [params.license]
+    link = "https://creativecommons.org/licenses/by-sa/4.0/deed.fr"
+    name = "CC-BY-SA-4.0"
+    siret = 83494010800030
+
+
+  # Optional piwik tracking
+  #[params.analytics.piwik]
+  #  URL = "https://stats.example.com"
+  #  ID = "42"
+  #  # Track all subdomains with "*.example.com"
+  #  domain = "www.example.com"
+  #  # Optional integrity check hash
+  #  hash = "sha512-RfeD0pacGTqy9m7U6PgehQfS4cc7SIt+e+P+H5e848kEvB/RW84CUGO3O4O3LNbxjevym6KPUZ8muPsMrI8WIw=="

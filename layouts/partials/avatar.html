@@ -1,0 +1,10 @@
+<header>
+  <a href="{{ .Site.BaseURL }}">
+    <div class="avatar">
+      <div class="avatar-inner">
+        <div class="avatar-front"><img src="{{ .Site.Params.personal.avatarFront | printf "/images/avatars/%s" | relURL  }}" alt="logo" height="150" width="150" ></div>
+        <div class="avatar-back"><img src="{{ .Site.Params.personal.avatarBack | printf "/images/avatars/%s" | relURL  }}" alt="photo" height="150" width="150" ></div>
+      </div>
+    </div>
+  </a>
+</header>

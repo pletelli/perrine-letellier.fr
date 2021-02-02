@@ -1,0 +1,56 @@
+#main {
+  padding-top: 0.5em;
+}
+
+@media screen and (max-width: 480px) {
+  #main {
+    min-width: 90%;
+    width: 100%;
+    padding: 2em ; } }
+
+#main .avatar {
+  height: 150px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  position: relative;
+  display: block;
+  margin-bottom: 1.5em;
+}
+
+a:hover {
+  color:  rgba(245, 70, 4, 1);
+}
+ul.icons li a:hover {
+    border-color: rgba(245, 70, 4, 1);
+}
+
+/* This container is needed to position the front and back side */
+#main .avatar-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.avatar:hover .avatar-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.avatar-front, .avatar-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.avatar-front {
+}
+
+/* Style the back side */
+.avatar-back {
+  transform: rotateY(180deg);
+}
